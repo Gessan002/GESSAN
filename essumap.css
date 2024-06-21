@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 90, 24);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.image-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.image-container::before,
+.image-container::after {
+    content: '';
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.image-container::before {
+    background-image: url('logo.png');
+}
+
+.image-container::after {
+    background-image: url('map.png');
+}
+
+
+
+.transparent-box {
+    width: 60%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+.yellow-rec {
+    width: 100%;
+    background-color: rgb(23, 90, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.white-rec{
+    width: 100%;
+    background-color: white;
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.white-rec h1,
+.white-rec h2,
+.white-rec h3 {
+    margin: 0;
+    width: 100%; 
+    text-align: right; 
+}
+
+
+.upper-right-rec {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upper-right-rec .rec {
+    width: 300px;
+    height: auto;
+    background-color: rgb(23, 90, 24);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.upper-right-rec .rec span {
+    font-size: 20px;
+    color: yellow;
+    
+}
+
+
+
+.upper-right-rec .rec .yellow-subrec {
+    width: 270px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.upper-right-rec .rec .yellow-subrec p {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 11px;
+}
+
+h1, h3 {
+    color: rgb(23, 90, 24);;
+}
+
+h2 {
+    color: rgb(240, 240, 47);
+}
+
+
